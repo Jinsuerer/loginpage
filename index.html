@@ -37,9 +37,9 @@ border-radius: 20px;
 
         }
         label{
-            display: inline;
+            display: inline-block;
             font-weight: 700;
-            width: 110px; ;
+            width: 110px; 
             text-align: left;
         }
 div{
@@ -49,9 +49,27 @@ input{
     height: 40px;
     text-align: center;
     border-radius: 10px;
-    
+    border-style: none;
+
 
 }
+.button input{
+    background-color: palevioletred;
+    padding: 0px 25px;
+    border-style: none;
+
+}
+.button input:hover{
+    background-color: purple;
+    color: white;
+    font-size: bold;
+    cursor: pointer;
+
+}
+input:focus{
+    text-align: left;
+}
+
 
     </style>
 </head>
@@ -61,20 +79,20 @@ input{
     <!-- 1 Satir -->
     <div class="username"> 
         <label for="Username"> Username</label>
-        <input type="Username" name username id="username" placeholder="Enter your password">
+        <input type="Username" name username id="username" placeholder="Enter your Username">
         
     </div>
     <!-- 2 Satir -->
     <div class="passwort"> 
         <label for="Passwort"> Passwort</label>
-        <input type="Passwort" name username id="Passwort" placeholder="Enter your password">
+        <input type="Passwort" name username id="Passwort" placeholder="Enter your Password">
     </div>
     <!-- 3 satir -->
     <div class="scode"> 
         <label for="scode"> Security Code</label>
-        <input type="scode" name scode id="scode" placeholder="Enter your password" >
+        <input type="scode" name scode id="scode" placeholder="Enter your Security Code" >
     </div>
-    <div class="buton"> 
+    <div class="button"> 
         <input type="submit" value="Login">
         <input type="reset" value="Clear">
     </div>
