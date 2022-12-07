@@ -17,28 +17,62 @@
             background-image: url(cloud.png);
             background-size:cover ;
             font-family: 'Roboto', sans-serif;
+            text-align: center;
+            
 
         }
+        h1{
+            padding: 40px;
+        }
+        form{
+
+            display: inline-block;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            width: fit-content;
+            padding: 20px;
+            background-color: #8BC6EC;
+           background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+border-radius: 20px;
+
+        }
+        label{
+            display: inline;
+            font-weight: 700;
+            width: 110px; ;
+            text-align: left;
+        }
+div{
+    margin: 20px 0px;
+}
+input{
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    
+
+}
 
     </style>
 </head>
 <body>
     <h1>Login Page</h1>
-    <form action=""></form>
+    <form action="">
     <!-- 1 Satir -->
     <div class="username"> 
         <label for="Username"> Username</label>
-        <input type="Username" name username id="username">
+        <input type="Username" name username id="username" placeholder="Enter your password">
+        
     </div>
     <!-- 2 Satir -->
     <div class="passwort"> 
         <label for="Passwort"> Passwort</label>
-        <input type="Passwort" name username id="Passwort">
+        <input type="Passwort" name username id="Passwort" placeholder="Enter your password">
     </div>
     <!-- 3 satir -->
     <div class="scode"> 
         <label for="scode"> Security Code</label>
-        <input type="scode" name scode id="scode">
+        <input type="scode" name scode id="scode" placeholder="Enter your password" >
     </div>
     <div class="buton"> 
         <input type="submit" value="Login">
